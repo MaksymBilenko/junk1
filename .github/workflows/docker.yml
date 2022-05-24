@@ -23,7 +23,7 @@ jobs:
         id: ecr
         with:
           # The complete repository name from ECR {BU}/{TEAM}/{PROJECT} (ex. cross/devtools/devtools-scripts).
-          ecr_repository: 'junk1'
+          ecr_repository: 'cross/devtools/momo'
           # Comma-separated string of ECR image tags (ex. latest, 1.0.0)
           tags: 'latest,0.2.2,beta'
         # Warning! Don't change this env values!
