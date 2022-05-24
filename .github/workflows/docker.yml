@@ -2,13 +2,12 @@ on: [push]
 
 jobs:
   ecr:
+    environment: test
     runs-on: ubuntu-latest
     name: Docker build and push to ECR
     steps:
-
       - name: Checkout
         uses: actions/checkout@v2
-
       # Exemple of build using docker
       - name: Docker Build
         env:
